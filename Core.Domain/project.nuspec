@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Lykke.Core.Domain</id>
+    <version>$version$</version>
+    <authors>Lykke</authors>
+    <owners>Lykke</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The domain layer for Lykke's applications</description>
+    <tags>Lykke Core Domain</tags>
+  </metadata>
+</package>
