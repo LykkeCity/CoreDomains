@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Core.Domain.Assets.Models;
+using Lykke.Core.Domain.Assets.Models;
 using Microsoft.ServiceFabric.Actors;
 
-namespace Core.Domain.Dictionary
+namespace Lykke.Core.Domain.Dictionary
 {
     public interface IDictionaryService : IActor
     {

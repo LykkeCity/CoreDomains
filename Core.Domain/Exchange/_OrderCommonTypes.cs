@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Core.Domain.Exchange
+namespace Lykke.Core.Domain.Exchange
 {
     public enum OrderAction
     {

@@ -1,8 +1,7 @@
-﻿using Core.Domain.Assets.Models;
-using Core.Domain.Feed;
+﻿using Lykke.Core.Domain.Feed;
 using Microsoft.ServiceFabric.Actors;
 
-namespace Core.Domain.MatchingEngine
+namespace Lykke.Core.Domain.MatchingEngine
 {
     public interface IMatchingEngineEvents : IActorEvents
     {

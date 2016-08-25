@@ -1,4 +1,4 @@
-﻿namespace Core.Domain.Assets.Models
+﻿namespace Lykke.Core.Domain.Assets.Models
 {
     public class AssetPair
     {

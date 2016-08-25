@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Core.Domain.Assets.Models;
+using Lykke.Core.Domain.Assets.Models;
 
-namespace Core.Domain.Assets
+namespace Lykke.Core.Domain.Assets
 {
     public interface IAssetPairRepository
     {

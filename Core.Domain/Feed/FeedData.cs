@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Core.Domain.Feed
+namespace Lykke.Core.Domain.Feed
 {
     public class FeedData
     {

@@ -1,4 +1,4 @@
-﻿namespace Core.Domain.MatchingEngine.Models
+﻿namespace Lykke.Core.Domain.MatchingEngine.Models
 {
     public class CashInOutResponse
     {
