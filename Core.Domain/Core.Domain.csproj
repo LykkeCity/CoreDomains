@@ -79,7 +79,7 @@
     <Compile Include="Assets\Models\AssetPair.cs" />
     <Compile Include="Dictionary\IDictionaryService.cs" />
     <Compile Include="Exchange\_OrderCommonTypes.cs" />
-    <Compile Include="Feed\FeedData.cs" />
+    <Compile Include="Exchange\Models\OrderInfo.cs" />
     <Compile Include="MatchingEngine\IMatchingEngine.cs" />
     <Compile Include="MatchingEngine\IMatchingEngineEvents.cs" />
     <Compile Include="MatchingEngine\Models\CashInOutResponse.cs" />

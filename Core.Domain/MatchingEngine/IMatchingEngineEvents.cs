@@ -1,4 +1,4 @@
-﻿using Lykke.Core.Domain.Feed;
+﻿using Lykke.Core.Domain.Assets.Models;
 using Microsoft.ServiceFabric.Actors;
 
 namespace Lykke.Core.Domain.MatchingEngine
@@ -7,6 +7,6 @@ namespace Lykke.Core.Domain.MatchingEngine
     {
         void BalanceUpdated(double balance);
 
-        void AssetPairPriceUpdated(FeedData assetPair);
+        void AssetPairPriceUpdated(AssetPairQuote assetPair);
     }
 }

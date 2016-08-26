@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace Lykke.Core.Domain.Feed
+namespace Lykke.Core.Domain.Assets.Models
 {
-    public class FeedData
+    public class AssetPairQuote
     {
-        public string Asset { get; set; }
+        public string AssetPairId { get; set; }
         public DateTime DateTime { get; set; }
         public double Bid { get; set; }
         public double Ask { get; set; }
