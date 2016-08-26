@@ -5,7 +5,7 @@ namespace Lykke.Core.Domain.MatchingEngine
 {
     public interface IMatchingEngineEvents : IActorEvents
     {
-        void BalanceUpdated(double balance);
+        void AccountUpdated(string accountId);
 
         void AssetPairPriceUpdated(AssetPairQuote assetPair);
     }
