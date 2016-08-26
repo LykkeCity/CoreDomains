@@ -1,4 +1,8 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using Lykke.Core.Domain.Account.Models;
+using Lykke.Core.Domain.Assets.Models;
+using Lykke.Core.Domain.Exchange.Models;
 using Microsoft.ServiceFabric.Actors;
 
 namespace Lykke.Core.Domain.MatchingEngine
@@ -6,5 +10,15 @@ namespace Lykke.Core.Domain.MatchingEngine
     public interface IMatchingEngine : IActor, IActorEventPublisher<IMatchingEngineEvents>
     {
         Task InitAsync();
+
+        Task<AccountInfo> GetAccountInfoAsync(string accountId);
+
+        Task OpenOrderAsync(string accountId, string assetPairId, double volume);
+
+        Task ClosePositionAsync(string accountId, string orderId);
+
+        Task<IEnumerable<OrderInfo>> GetActivePositionsAsync(string accountId);
+
+        Task<IEnumerable<AssetPairQuote>> GetMarketProfile();
     }
 }
