@@ -75,6 +75,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account\IAccountInfoRepository.cs" />
+    <Compile Include="Account\Models\AccountInfo.cs" />
     <Compile Include="Assets\IAssetPairRepository.cs" />
     <Compile Include="Assets\Models\AssetPair.cs" />
     <Compile Include="Dictionary\IDictionaryService.cs" />
