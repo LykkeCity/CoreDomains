@@ -83,7 +83,9 @@
     <Compile Include="Assets\Models\AssetPairQuote.cs" />
     <Compile Include="Dictionary\IDictionaryService.cs" />
     <Compile Include="Exchange\IOrderInfoRepository.cs" />
+    <Compile Include="Exchange\ITransactionHistoryRepository.cs" />
     <Compile Include="Exchange\Models\OrderInfo.cs" />
+    <Compile Include="Exchange\Models\TransactionHistory.cs" />
     <Compile Include="Exchange\Models\_OrderCommonTypes.cs" />
     <Compile Include="MatchingEngine\IMatchingEngine.cs" />
     <Compile Include="MatchingEngine\IMatchingEngineEvents.cs" />
