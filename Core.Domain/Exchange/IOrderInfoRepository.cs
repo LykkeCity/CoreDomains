@@ -10,6 +10,8 @@ namespace Lykke.Core.Domain.Exchange
 
         Task<IEnumerable<OrderInfo>> GetAllAsync(string accountId);
 
-        Task DeleteAsync(string orderId);
+        Task<OrderInfo> GetAsync(string accountId, string orderId);
+
+        Task DeleteAsync(string accountId, string orderId);
     }
 }
