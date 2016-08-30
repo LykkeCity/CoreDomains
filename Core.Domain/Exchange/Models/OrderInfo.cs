@@ -11,9 +11,6 @@ namespace Lykke.Core.Domain.Exchange.Models
         public double Price { get; set; }
         public string AssetPairId { get; set; }
 
-        public static OrderAction OrderAction(OrderInfo orderBase)
-        {
-            return orderBase.Volume > 0 ? Models.OrderAction.Buy : Models.OrderAction.Sell;
-        }
+        public OrderAction OrderAction => this.Volume > 0 ? OrderAction.Buy : OrderAction.Sell;
     }
 }
