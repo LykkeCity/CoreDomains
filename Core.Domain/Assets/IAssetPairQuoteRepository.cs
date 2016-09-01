@@ -13,5 +13,7 @@ namespace Lykke.Core.Domain.Assets
         Task AddAllAsync(IEnumerable<AssetPair> assetPairs);
 
         Task<AssetPairQuote> UpdateAsync(AssetPair assetPair);
+
+        Task<AssetPairQuote> UpdateAsync(AssetPairQuote assetPairQuote);
     }
 }
