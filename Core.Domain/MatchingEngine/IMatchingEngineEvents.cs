@@ -8,5 +8,7 @@ namespace Lykke.Core.Domain.MatchingEngine
         void AccountUpdated(string accountId);
 
         void AssetPairPriceUpdated(AssetPairQuote assetPair);
+
+        void ActiveOrdersUpdated(string accountId);
     }
 }
