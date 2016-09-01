@@ -1,6 +1,6 @@
 ﻿namespace Lykke.Core.Domain.Exchange.Models
 {
-    public class OrderInfo : OrderBase
+    public class PendingOrder : OrderBase, IOrder
     {
         public double DefinedPrice { get; set; }
     }
