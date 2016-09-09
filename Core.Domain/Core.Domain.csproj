@@ -83,7 +83,10 @@
     <Compile Include="Assets\Models\AssetPairQuote.cs" />
     <Compile Include="Country\ICountryRepository.cs" />
     <Compile Include="Country\Models\CountryItem.cs" />
+    <Compile Include="Country\Models\IIpGeoLocationData.cs" />
+    <Compile Include="Country\Models\IpGeolocationData.cs" />
     <Compile Include="Dictionary\IDictionaryService.cs" />
+    <Compile Include="Dictionary\IIpGeoLocation.cs" />
     <Compile Include="Exchange\IMarketOrderRepository.cs" />
     <Compile Include="Exchange\IOrderRepository.cs" />
     <Compile Include="Exchange\IPendingOrderRepository.cs" />
