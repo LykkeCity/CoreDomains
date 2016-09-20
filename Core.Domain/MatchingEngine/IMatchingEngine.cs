@@ -7,9 +7,11 @@ using Microsoft.ServiceFabric.Actors;
 
 namespace Lykke.Core.Domain.MatchingEngine
 {
-    public interface IMatchingEngine : IActor, IActorEventPublisher<IMatchingEngineEvents>
+    public interface IMatchingEngine : IActor
     {
         Task InitAsync();
+
+        Task SubscribeAsync(string subscriberName);
 
         Task<AccountInfo> GetAccountInfoAsync(string accountId);
 

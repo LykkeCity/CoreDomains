@@ -1,14 +1,14 @@
-﻿using Lykke.Core.Domain.Assets.Models;
-using Microsoft.ServiceFabric.Actors;
+﻿using System.Threading.Tasks;
+using Lykke.Core.Domain.Assets.Models;
 
 namespace Lykke.Core.Domain.MatchingEngine
 {
-    public interface IMatchingEngineEvents : IActorEvents
+    public interface IMatchingEngineEvents
     {
-        void AccountUpdated(string accountId);
+        Task AccountUpdatedAsync(string accountId);
 
-        void AssetPairPriceUpdated(AssetPairQuote assetPair);
+        Task AssetPairPriceUpdatedAsync(AssetPairQuote assetPair);
 
-        void ActiveOrdersUpdated(string accountId);
+        Task ActiveOrdersUpdatedAsync(string accountId);
     }
 }
