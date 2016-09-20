@@ -79,8 +79,12 @@
     <Compile Include="Account\Models\AccountInfo.cs" />
     <Compile Include="Assets\IAssetPairQuoteRepository.cs" />
     <Compile Include="Assets\IAssetPairRepository.cs" />
+    <Compile Include="Assets\IAssetRepository.cs" />
+    <Compile Include="Assets\IIssuerRepository.cs" />
+    <Compile Include="Assets\Models\Asset.cs" />
     <Compile Include="Assets\Models\AssetPair.cs" />
     <Compile Include="Assets\Models\AssetPairQuote.cs" />
+    <Compile Include="Assets\Models\Issuer.cs" />
     <Compile Include="Country\ICountryRepository.cs" />
     <Compile Include="Country\Models\CountryItem.cs" />
     <Compile Include="Country\Models\IIpGeoLocationData.cs" />
