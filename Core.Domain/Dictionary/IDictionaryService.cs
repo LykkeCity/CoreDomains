@@ -11,5 +11,11 @@ namespace Lykke.Core.Domain.Dictionary
         Task<IEnumerable<AssetPair>> GetAssetPairsAsync();
 
         Task<IEnumerable<CountryItem>> GetCountriesAsync(string language);
+
+        Task<IEnumerable<AssetPair>> GetMarginalAssetPairsAsync();
+
+        Task<IEnumerable<Issuer>> GetMarginalIssuersAsync();
+
+        Task<IEnumerable<Asset>> GetMarginalAssetsAsync();
     }
 }
