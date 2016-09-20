@@ -1,11 +1,9 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using Lykke.Core.Domain.Assets.Models;
+﻿using Lykke.Core.Domain.Assets.Models;
+using Lykke.Core.Domain.Infrasturture;
 
 namespace Lykke.Core.Domain.Assets
 {
-    public interface IAssetPairRepository
+    public interface IAssetPairRepository : IRepository<AssetPair>
     {
-        Task<IEnumerable<AssetPair>> GetAllAssetPairsAsync();
     }
 }

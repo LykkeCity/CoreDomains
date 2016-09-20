@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Lykke.Core.Domain.Exchange.Models;
+using Lykke.Core.Domain.Infrasturture;
 
 namespace Lykke.Core.Domain.Exchange
 {
-    public interface ITransactionHistoryRepository
+    public interface ITransactionHistoryRepository : IRepository
     {
         Task AddAsync(TransactionHistory transactionHistory);
 

@@ -98,6 +98,7 @@
     <Compile Include="Exchange\Models\PendingOrder.cs" />
     <Compile Include="Exchange\Models\TransactionHistory.cs" />
     <Compile Include="Exchange\Models\_OrderCommonTypes.cs" />
+    <Compile Include="Infrasturture\IRepository.cs" />
     <Compile Include="MatchingEngine\IMatchingEngine.cs" />
     <Compile Include="MatchingEngine\IMatchingEngineEvents.cs" />
     <Compile Include="MatchingEngine\MatchingEngineTopics.cs" />

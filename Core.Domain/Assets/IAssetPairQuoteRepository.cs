@@ -1,13 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Lykke.Core.Domain.Assets.Models;
+using Lykke.Core.Domain.Infrasturture;
 
 namespace Lykke.Core.Domain.Assets
 {
-    public interface IAssetPairQuoteRepository
+    public interface IAssetPairQuoteRepository : IRepository<AssetPairQuote>
     {
-        Task<IEnumerable<AssetPairQuote>> GetAllAsync();
-
         Task<AssetPairQuote> GetAsync(string assertPairId);
 
         Task AddAllAsync(IEnumerable<AssetPair> assetPairs);
