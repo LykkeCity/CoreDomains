@@ -7,12 +7,8 @@ namespace Lykke.Core.Domain.Assets
 {
     public interface IAssetPairQuoteRepository : IRepository<AssetPairQuote>
     {
-        Task<AssetPairQuote> GetAsync(string assertPairId);
-
         Task AddAllAsync(IEnumerable<AssetPair> assetPairs);
 
         Task<AssetPairQuote> UpdateAsync(AssetPair assetPair);
-
-        Task<AssetPairQuote> UpdateAsync(AssetPairQuote assetPairQuote);
     }
 }

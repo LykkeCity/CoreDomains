@@ -7,12 +7,14 @@ namespace Lykke.Core.Domain.Exchange
 {
     public interface IOrderRepository<T> : IRepository where T : IOrder
     {
-        Task AddAsync(string accountId, string assetPairId, double volume);
-
         Task<IEnumerable<T>> GetAllAsync(string accountId);
 
         Task<T> GetAsync(string accountId, string orderId);
 
         Task DeleteAsync(string accountId, string orderId);
+
+        Task AddAsync(T entity);
+
+        Task UpdateAsync(T entity);
     }
 }
