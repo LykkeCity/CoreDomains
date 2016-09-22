@@ -98,6 +98,7 @@
     <Compile Include="Exchange\Models\IOrder.cs" />
     <Compile Include="Exchange\Models\MarketOrder.cs" />
     <Compile Include="Exchange\Models\OrderBase.cs" />
+    <Compile Include="Exchange\Models\OrderBook.cs" />
     <Compile Include="Exchange\Models\OrderInfo.cs" />
     <Compile Include="Exchange\Models\PendingOrder.cs" />
     <Compile Include="Exchange\Models\TransactionHistory.cs" />

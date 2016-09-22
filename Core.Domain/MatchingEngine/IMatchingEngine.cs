@@ -22,5 +22,7 @@ namespace Lykke.Core.Domain.MatchingEngine
         Task<IEnumerable<OrderInfo>> GetActiveOrdersAsync(string accountId);
 
         Task<IEnumerable<AssetPairQuote>> GetMarketProfileAsync();
+
+        Task<IEnumerable<OrderBook>> GetOrderBookAsync();
     }
 }
