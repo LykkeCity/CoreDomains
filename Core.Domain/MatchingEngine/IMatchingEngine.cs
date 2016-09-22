@@ -15,7 +15,7 @@ namespace Lykke.Core.Domain.MatchingEngine
 
         Task<AccountInfo> GetAccountInfoAsync(string accountId);
 
-        Task OpenOrderAsync(string accountId, string assetPairId, double volume, double definedPrice);
+        Task<OrderInfo> OpenOrderAsync(string accountId, string assetPairId, double volume, double definedPrice);
 
         Task CloseOrderAsync(string accountId, string orderId);
 
@@ -24,5 +24,7 @@ namespace Lykke.Core.Domain.MatchingEngine
         Task<IEnumerable<AssetPairQuote>> GetMarketProfileAsync();
 
         Task<IEnumerable<OrderBook>> GetOrderBookAsync();
+
+        Task<IEnumerable<TransactionHistory>> GetTransactionsHistoryAsync(string accountId);
     }
 }
