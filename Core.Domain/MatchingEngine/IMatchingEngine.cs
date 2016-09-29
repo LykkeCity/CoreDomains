@@ -26,5 +26,7 @@ namespace Lykke.Core.Domain.MatchingEngine
         Task<IEnumerable<OrderBook>> GetOrderBookAsync();
 
         Task<IEnumerable<TransactionHistory>> GetTransactionsHistoryAsync(string accountId);
+
+        Task UpdateAccountBalanceAsync(string accountId, double balance);
     }
 }
